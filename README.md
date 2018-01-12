@@ -1,3 +1,5 @@
+# [![LHCreate-2017](images/eventLogo-300px.png)](https://lhcreate.web.cern.ch)
+
 # USB programmer shield for the LHCreate eco-system
 
 ## What
