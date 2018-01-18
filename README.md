@@ -8,7 +8,7 @@
 
 This board has been designed as a specific USB programmer shield for the [LHCreate eco-system](https://github.com/nostradomus/LHCreate-2017).
 
-The concerning µ-controller board was fit with an ICSP-connector for programming through various programming devices. When using a µ-controller with proper bootloader, the system can also be programmed serially, by using below described shield. The USB programmer shield acts as a [USB-to-serial converter](pdf-files/datasheet - CH340G USB to UART Interface.pdf).
+The concerning µ-controller board was fit with an ICSP-connector for programming through various programming devices. When using a µ-controller with proper bootloader, the system can also be programmed serially, by using below described shield. The USB programmer shield acts as a [USB-to-serial converter](pdf-files/datasheet-CH340G_USB_to_UART_Interface.pdf).
 
 The shield has been designed to mechanically fit on top of the µ-controller board by using the available connectors in the central square. These connectors contain all required electrical signals : RX, TX, reset, GND and +5V. The serial converter's DTR-line takes care of the reset signal to launch the bootloader. The shield transparently feeds through the signals from the I2C and ICSP connectors on the µ-controller board. They can be used as if the shield was not there (except during the uploading of new firmware of course).
 
@@ -33,11 +33,11 @@ The shield has been designed to mechanically fit on top of the µ-controller boa
 
 #### Electronics
 
-[![Schematic](images/schematic.png)](images/schematic.png)
+...
 
-##### The Board
+#### Schematics & Board
 
-[![PCB](images/board-layout.png)](images/board-layout.png)
+[![PCB](images/board-layout-s.png)](images/board-layout.png) [![Schematic](images/schematic-s.png)](images/schematic.png)
 
 #### Components list
 
