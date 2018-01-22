@@ -8,17 +8,13 @@
 
 This board has been designed as a specific USB programmer shield for the [LHCreate eco-system](https://github.com/nostradomus/LHCreate-2017).
 
-The concerning µ-controller board was fit with an ICSP-connector for programming through various programming devices. When using a µ-controller with proper bootloader, the system can also be programmed serially, by using below described shield. The USB programmer shield acts as a [USB-to-serial converter](pdf-files/datasheet-CH340G_USB_to_UART_Interface.pdf).
-
-The shield has been designed to mechanically fit on top of the µ-controller board by using the available connectors in the central square. These connectors contain all required electrical signals : RX, TX, reset, GND and +5V. The serial converter's DTR-line takes care of the reset signal to launch the bootloader. The shield transparently feeds through the signals from the I2C and ICSP connectors on the µ-controller board. They can be used as if the shield was not there (except during the uploading of new firmware of course).
-
 ### Why
 
-...
+The concerning µ-controller board was fit with an ICSP-connector for programming through various programming devices. When using a µ-controller with proper bootloader, the system can also be programmed serially, by using below described shield. The USB programmer shield acts as a [USB-to-serial converter](pdf-files/datasheet-CH340G_USB_to_UART_Interface.pdf).
 
 ### How
 
-...
+The shield has been designed to mechanically fit on top of the µ-controller board by using the available connectors in the central square. These connectors contain all required electrical signals : RX, TX, reset, GND and +5V. The serial converter's DTR-line takes care of the reset signal to launch the bootloader. The shield transparently feeds through the signals from the I2C and ICSP connectors on the µ-controller board. They can be used as if the shield was not there (except during the uploading of new firmware of course).
 
 ### Progress status
 
@@ -33,7 +29,7 @@ The shield has been designed to mechanically fit on top of the µ-controller boa
 
 #### Electronics
 
-...
+The CH340G USB-to-UART chip is the central component for this board. Crystal X1, together with load capacitors C3 and C4 will provide a stable clock to the chip. C1 and C2 stabilise the 5V power supply, which will either come from the USB connection, or from the underlying eco-system's µ-controller-board. R1, D1 will light up when the board is powered. C6 has been added for the 3V3 power-line coming from the CH340G chip (not used in this configuration). Through C5, the USB-to-UART chip will sent a reset signal to the µ-controller to be programmed, by means of its DTR line. Reset button S1 has been repeated on the programmer board for accessibility reasons. Pull-up resistor R2 is optional, and only needs to be mounted when the programmer-board is used as stand-alone to program minimal circuits (which have not been fit with such a resistor). R6/D2 and R5/D3 will blink when communication is on-going over the serial connections (RX and TX). R3 and R4 protect the serial connection on CON3 against over-current. I2C connection CON4 can be used transparently when the programming shield is fit on top of the µ-controller board. ICSP header CON2 can be used when the µ-controller is running (not during serial programming). The same applies for the serial connections on CON3.
 
 #### Schematics & Board
 
