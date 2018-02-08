@@ -22,14 +22,14 @@ The shield has been designed to mechanically fit on top of the µ-controller boa
  - [x] decide on what is should [look](#how) like
  - [x] build [prototype electronics](#how)
  - [x] design a descent [electronics](#electronics) board
- - [ ] build the final [electronics](#electronics)
+ - [x] build the final [electronics](#electronics)
  - [ ] write [end-user documentation](https://github.com/nostradomus/LHCreate___usb-programmer-shield/wiki)
 
 ### Technical details
 
 #### Electronics
 
-The CH340G USB-to-UART chip is the central component for this board. Crystal X1, together with load capacitors C3 and C4 will provide a stable clock to the chip. C1 and C2 stabilise the 5V power supply, which will either come from the USB connection, or from the underlying eco-system's µ-controller-board. R1, D1 will light up when the board is powered. C6 has been added for the 3V3 power-line coming from the CH340G chip (not used in this configuration). Through C5, the USB-to-UART chip will sent a reset signal to the µ-controller to be programmed, by means of its DTR line. Reset button S1 has been repeated on the programmer board for accessibility reasons. Pull-up resistor R2 is optional, and only needs to be mounted when the programmer-board is used as stand-alone to program minimal circuits (which have not been fit with such a resistor). R6/D2 and R5/D3 will blink when communication is on-going over the serial connections (RX and TX). R3 and R4 protect the serial connection on CON3 against over-current. I2C connection CON4 can be used transparently when the programming shield is fit on top of the µ-controller board. ICSP header CON2 can be used when the µ-controller is running (not during serial programming). The same applies for the serial connections on CON3.
+The [CH340G USB-to-UART chip](pdf-files/datasheet-CH340G_USB_to_UART_Interface.pdf) is the central component for this board. Crystal X1, together with load capacitors C3 and C4 will provide a stable clock to the chip. C1 and C2 stabilise the 5V power supply, which will either come from the USB connection, or from the underlying eco-system's µ-controller-board. R1, D1 will light up when the board is powered. C6 has been added for the 3V3 power-line coming from the CH340G chip (not used in this configuration). Through C5, the USB-to-UART chip will sent a reset signal to the µ-controller to be programmed, by means of its DTR line. Reset button S1 has been repeated on the programmer board for accessibility reasons. Pull-up resistor R2 is optional, and only needs to be mounted when the programmer-board is used as stand-alone to program minimal circuits (which have not been fit with such a resistor). R6/D2 and R5/D3 will blink when communication is on-going over the serial connections (RX and TX). R3 and R4 protect the serial connection on CON3 against over-current. I2C connection CON4 can be used transparently when the programming shield is fit on top of the µ-controller board. ICSP header CON2 can be used when the µ-controller is running (not during serial programming). The same applies for the serial connections on CON3.
 
 #### Schematics & Board
 
@@ -58,11 +58,11 @@ CON4           | 4-pin       | SIL04            | pin header (long-needle F-M)
 
 #### Mechanical construction
 
-The shield has been designed to fit on the LHCreate eco-system µ-controller board, by using its connectors for ICSP, I2C and serial communication. For that matter, long-needle connectors need to be used. These connectors are of female type on the solder-side of the pcb, and have long pins pointing upwards on the component-side. This way all connections remain available during programming and debugging.
+The shield has been designed to fit on the LHCreate eco-system µ-controller board, by using its connectors for ICSP, I2C and serial communication. For that matter, long-needle connectors need to be used. These connectors are of female type on the solder-side of the PCB, and have long pins pointing upwards on the component-side. This way all connections remain available during programming and debugging.
 
 #### Building instructions
 
-More coming soon.............
+The best way to populate the PCB, in case of hand-soldering, is to start with the IC1, as you will need access to the surroundings to remove the excess solder with some braided shielding wire. Next all 1206 format SMD components can be mounted (resistors and capacitors). Mind the polarity when mounting led's D2 and D3. Now you can mount the aluminium capacitor C1 (look at the footprint for the correct orientation), and crystal X1. After having finished with the SMD components, some through-hole components need to be mounted. First the mini-USB connector CON1. The metal housing needs to be solder on the component-side of the PCB, and the five pins from the solder-side. Now, only led D1 and reset-button S1 have to be mounted (solder on the solder-side). To finish, fit the stackable headers (CON2,CON3,CON4) on the [LHCreate µ-controller board](https://github.com/nostradomus/LHCreate-2017), and then place the programmer shield in its operational position. The thirteen pins can now be soldered on the component-side (firmly push the PCB down).  
 
 ### Contributors
 
