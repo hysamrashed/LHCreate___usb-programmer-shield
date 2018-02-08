@@ -23,6 +23,7 @@ The shield has been designed to mechanically fit on top of the µ-controller boa
  - [x] build [prototype electronics](#how)
  - [x] design a descent [electronics](#electronics) board
  - [x] build the final [electronics](#electronics)
+ - [ ] test and validate the final USB programmer shield
  - [ ] write [end-user documentation](https://github.com/nostradomus/LHCreate___usb-programmer-shield/wiki)
 
 ### Technical details
@@ -62,7 +63,7 @@ The shield has been designed to fit on the LHCreate eco-system µ-controller boa
 
 #### Building instructions
 
-The best way to populate the PCB, in case of hand-soldering, is to start with the IC1, as you will need access to the surroundings to remove the excess solder with some braided shielding wire. Next all 1206 format SMD components can be mounted (resistors and capacitors). Mind the polarity when mounting led's D2 and D3. Now you can mount the aluminium capacitor C1 (look at the footprint for the correct orientation), and crystal X1. After having finished with the SMD components, some through-hole components need to be mounted. First the mini-USB connector CON1. The metal housing needs to be solder on the component-side of the PCB, and the five pins from the solder-side. Now, only led D1 and reset-button S1 have to be mounted (solder on the solder-side). To finish, fit the stackable headers (CON2,CON3,CON4) on the [LHCreate µ-controller board](https://github.com/nostradomus/LHCreate-2017), and then place the programmer shield in its operational position. The thirteen pins can now be soldered on the component-side (firmly push the PCB down).  
+The best way to populate the PCB, in case of hand-soldering, is to start with the IC1, as you will need access to the surroundings to remove the excess solder with some braided shielding wire. Next all 1206 package SMD components can be mounted (resistors and capacitors). Mind the polarity when mounting led's D2 and D3. Now you can mount the aluminium capacitor C1 (look at the footprint for the correct orientation), and crystal X1. After having finished with the SMD components, some through-hole components need to be mounted. First the mini-USB connector CON1. The metal housing needs to be solder on the component-side of the PCB, and the five pins from the solder-side. Now, only led D1 and reset-button S1 have to be mounted (solder on the solder-side). To finish, fit the stackable headers (CON2,CON3,CON4) on the [LHCreate µ-controller board](https://github.com/nostradomus/LHCreate-2017), and then place the programmer shield in its operational position. The thirteen pins can now be soldered on the component-side (firmly push the PCB down).  
 
 ### Contributors
 
