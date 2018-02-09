@@ -2,6 +2,7 @@
 
 ## USB programmer shield for the LHCreate eco-system
 
+![populated PCB....](images/populated-pcb.png)
 ![non-populated PCB....](images/pcb.png)
 
 ### What
