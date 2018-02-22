@@ -24,7 +24,7 @@ The shield has been designed to mechanically fit on top of the µ-controller boa
  - [x] build [prototype electronics](#how)
  - [x] design a descent [electronics](#electronics) board
  - [x] build the final [electronics](#electronics)
- - [ ] test and validate the final USB programmer shield
+ - [x] test and validate the final USB programmer shield
  - [ ] write [end-user documentation](https://github.com/nostradomus/LHCreate___usb-programmer-shield/wiki)
 
 ### Technical details
