@@ -1,6 +1,6 @@
 # [![LHCreate-2017](images/eventLogo-300px.png)](https://lhcreate.web.cern.ch)
 
-![](https://img.shields.io/badge/project%20status-released-green.svg)
+![](https://img.shields.io/badge/project%20status-released-green.svg) ![](https://img.shields.io/badge/version-2018/001V01-green.svg)
 
 ## USB programmer shield for the LHCreate eco-system
 
